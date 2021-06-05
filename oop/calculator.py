@@ -27,13 +27,16 @@ class Calculator(object):
 
     @staticmethod
     def main():
-        calc = Calculator(6, 2) # first_num = 6, second_num = 2
-        print('*'*30)
-        print(f'{calc.first_num} + {calc.second_num} = {calc.add()}')
-        print(f'{calc.first_num} - {calc.second_num} = {calc.sub()}')
-        print(f'{calc.first_num} * {calc.second_num} = {calc.mul()}')
-        print(f'{calc.first_num} / {calc.second_num} = {calc.div()}')
-        print('*'*30)
+        while 1:
+            menu = input('0-종료 1-계산기')
+            
+            calc = Calculator(6, 2) # first_num = 6, second_num = 2
+            print('*'*30)
+            print(f'{calc.first_num} + {calc.second_num} = {calc.add()}')
+            print(f'{calc.first_num} - {calc.second_num} = {calc.sub()}')
+            print(f'{calc.first_num} * {calc.second_num} = {calc.mul()}')
+            print(f'{calc.first_num} / {calc.second_num} = {calc.div()}')
+            print('*'*30)
 
 if __name__ == '__main__':
     Calculator.main()
